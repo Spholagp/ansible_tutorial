@@ -1,0 +1,11 @@
+---
+
+- hosts: all
+  become: true
+  tasks:
+
+  - name: remove nfs package
+    yum:
+      name: nfs-utils
+      state: absent
+

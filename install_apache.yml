@@ -1,0 +1,10 @@
+---
+
+- hosts: all
+  become: true
+  tasks:
+
+  - name: install java package
+    yum:
+      name: nfs-utils
+      state: latest
