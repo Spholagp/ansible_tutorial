@@ -5,6 +5,8 @@
   tasks:
 
   - name: install java package
-    yum:
+    dnf:
+      update_cache: yes
       name: nfs-utils
       state: latest
+    when: ansible_distribution == "RedHat"

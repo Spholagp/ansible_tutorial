@@ -1,0 +1,13 @@
+---
+
+- hosts: all
+  become: true
+  tasks:
+
+
+  - name: ensure wget is installed
+    yum:
+      name: wget
+      state: latest
+      update_cache: true
+    when: ansible_distribution == "RedHat" 
