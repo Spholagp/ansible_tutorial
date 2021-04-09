@@ -1,3 +1,8 @@
-192.168.122.59
-192.168.122.70
-192.168.122.133
+[web_server]
+192.168.122.59 apache_package=httpd php_package=php
+
+[db_server]
+192.168.122.70 apache_package=httpd php_package=php
+
+[file_server]
+192.168.122.133 apache_package=httpd php_package=php

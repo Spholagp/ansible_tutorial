@@ -4,9 +4,11 @@
   become: true
   tasks:
 
-  - name: install java package
-    dnf:
-      update_cache: yes
-      name: nfs-utils
+  - name: install apache and php package 
+    package:
+      name: 
+        - "{{ apache_package }}"
+        - "{{ php_package }}"
       state: latest
-    when: ansible_distribution == "RedHat"
+      update_cache: yes
+
