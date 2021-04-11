@@ -6,3 +6,4 @@
 
 [file_server]
 192.168.122.133 apache_package=httpd php_package=php
+
